@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="avatar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Ring Accent Gradient -->
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Avatar Shield Gradient -->
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <!-- Developer Hoodie / Torso Gradient -->
+    <linearGradient id="hoodie-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Face / Skin Tone Gradient -->
+    <linearGradient id="skin-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f87171" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Subtle radial glow behind avatar -->
+    <radialGradient id="center-glow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="36" fill="url(#avatar-bg)" />
+  <rect x="1" y="1" width="398" height="398" rx="35" stroke="#27272a" stroke-width="2" />
+
+  <!-- Ambient Glow in Center -->
+  <circle cx="200" cy="180" r="160" fill="url(#center-glow)" />
+
+  <!-- Outer Orbit Tech Rings -->
+  <circle cx="200" cy="180" r="150" stroke="url(#ring-grad)" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.65" />
+  <circle cx="200" cy="180" r="132" stroke="#334155" stroke-width="1.5" stroke-opacity="0.5" />
+
+  <!-- Orbital Node Accents -->
+  <circle cx="200" cy="30" r="5" fill="#38bdf8" />
+  <circle cx="340" cy="140" r="4.5" fill="#10b981" />
+  <circle cx="65" cy="220" r="4.5" fill="#facc15" />
+  <circle cx="310" cy="280" r="4" fill="#a855f7" />
+
+  <!-- Main Central Avatar Container -->
+  <circle cx="200" cy="180" r="115" fill="url(#shield-grad)" stroke="#3f3f46" stroke-width="2" />
+
+  <!-- Developer Silhouette / Illustration -->
+  <g id="developer-figure">
+    <!-- Torso / Hoodie (clipped within avatar circle) -->
+    <path 
+      d="M125 285 C130 225 155 210 175 205 L185 220 L200 223 L215 220 L225 205 C245 210 270 225 275 285 C250 295 225 298 200 298 C175 298 150 295 125 285 Z" 
+      fill="url(#hoodie-grad)" 
+    />
+    
+    <!-- Hoodie Strings / Collar detail -->
+    <path d="M190 222 L188 250" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" />
+    <path d="M210 222 L212 250" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" />
+    <path d="M200 224 L200 268" stroke="#1e3a8a" stroke-width="1.5" />
+
+    <!-- Head / Face base -->
+    <ellipse cx="200" cy="155" rx="46" ry="52" fill="#18181b" stroke="#38bdf8" stroke-width="1.5" />
+    
+    <!-- Modern Tech Glasses -->
+    <rect x="166" y="142" width="28" height="18" rx="4" fill="#0f172a" stroke="#60a5fa" stroke-width="2" />
+    <rect x="206" y="142" width="28" height="18" rx="4" fill="#0f172a" stroke="#60a5fa" stroke-width="2" />
+    <line x1="194" y1="151" x2="206" y2="151" stroke="#60a5fa" stroke-width="2" />
+    <line x1="158" y1="150" x2="166" y2="150" stroke="#60a5fa" stroke-width="1.5" />
+    <line x1="234" y1="150" x2="242" y2="150" stroke="#60a5fa" stroke-width="1.5" />
+
+    <!-- Glasses Glass Reflection -->
+    <path d="M170 146 L180 156" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+    <path d="M210 146 L220 156" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+
+    <!-- Modern Hair Silhouette -->
+    <path 
+      d="M152 145 C150 115 170 98 200 98 C230 98 250 115 248 145 C244 125 230 112 200 112 C170 112 156 125 152 145 Z" 
+      fill="#e2e8f0" 
+    />
+
+    <!-- Code Monogram Badge on Chest: PP -->
+    <rect x="184" y="248" width="32" height="18" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <text x="200" y="261" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" fill="#38bdf8" text-anchor="middle" letter-spacing="1">PP</text>
+  </g>
+
+  <!-- Verified Developer Active Badge (Bottom-Right of Avatar Ring) -->
+  <g id="verified-badge" transform="translate(265, 245)">
+    <circle cx="20" cy="20" r="22" fill="#09090b" stroke="#1e293b" stroke-width="2" />
+    <circle cx="20" cy="20" r="18" fill="#10b981" />
+    <path d="M13 20.5 L18 25.5 L27 15.5" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Code Syntax Prompt Tag at Bottom Center -->
+  <g id="bottom-terminal-tag">
+    <rect x="90" y="340" width="220" height="34" rx="10" fill="#18181b" stroke="#3f3f46" stroke-width="1.2" />
+    <circle cx="112" cy="357" r="4" fill="#10b981" />
+    <text x="126" y="362" font-family="monospace, monospace" font-size="12" font-weight="600" fill="#f4f4f5">premkumar.dev</text>
+    <text x="282" y="362" font-family="monospace, monospace" font-size="12" font-weight="700" fill="#60a5fa">&lt;/&gt;</text>
+  </g>
+</svg>

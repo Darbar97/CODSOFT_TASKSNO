@@ -1,0 +1,21 @@
+{
+  "name": "Premkumar Parmar - Frontend Developer & AI Enthusiast",
+  "short_name": "Premkumar Parmar",
+  "description": "Professional personal portfolio of Premkumar Parmar, Computer Science & Engineering student and frontend developer from Gujarat, India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad-auth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="card-grad-auth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Button Gradient -->
+    <linearGradient id="btn-grad-auth" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect width="640" height="360" rx="16" fill="url(#bg-grad-auth)" />
+  <rect x="0.5" y="0.5" width="639" height="359" rx="15.5" stroke="#334155" stroke-opacity="0.8" />
+
+  <!-- Browser Header Bar -->
+  <rect x="0" y="0" width="640" height="44" rx="16" fill="#0f172a" fill-opacity="0.95" />
+  <rect x="0" y="32" width="640" height="12" fill="#0f172a" fill-opacity="0.95" />
+  <line x1="0" y1="44" x2="640" y2="44" stroke="#334155" stroke-opacity="0.8" />
+  
+  <!-- Window Control Dots -->
+  <circle cx="28" cy="22" r="5" fill="#ef4444" />
+  <circle cx="44" cy="22" r="5" fill="#f59e0b" />
+  <circle cx="60" cy="22" r="5" fill="#10b981" />
+
+  <!-- URL Address Bar -->
+  <rect x="84" y="11" width="410" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="96" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94a3b8">https://frontend-five-nu-xvp54qnk44.vercel.app</text>
+
+  <!-- Live Deployment Pill -->
+  <rect x="520" y="11" width="96" height="22" rx="11" fill="#065f46" fill-opacity="0.7" stroke="#059669" stroke-width="1" />
+  <circle cx="534" cy="22" r="3.5" fill="#34d399" />
+  <text x="544" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#a7f3d0">PRODUCTION</text>
+
+  <!-- Centered Authentication Card Mockup -->
+  <g transform="translate(160, 62)">
+    <rect width="320" height="276" rx="14" fill="url(#card-grad-auth)" stroke="#334155" stroke-width="1.2" />
+    
+    <!-- Card Header -->
+    <rect x="135" y="16" width="50" height="50" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5" />
+    <path d="M152 42 L160 30 L168 42 Z" fill="#60a5fa" />
+    <circle cx="160" cy="48" r="3" fill="#60a5fa" />
+
+    <text x="160" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#f8fafc" text-anchor="middle">Welcome Back</text>
+    <text x="160" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Authentication &amp; User Dashboard</text>
+
+    <!-- Email Input -->
+    <text x="25" y="126" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#cbd5e1">Email Address</text>
+    <rect x="25" y="132" width="270" height="32" rx="7" fill="#0f172a" stroke="#10b981" stroke-width="1.2" />
+    <text x="38" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#f1f5f9">premkumar@example.com</text>
+    <path d="M276 144 l4 4 l8 -8" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Password Input -->
+    <text x="25" y="182" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#cbd5e1">Password</text>
+    <rect x="25" y="188" width="270" height="32" rx="7" fill="#0f172a" stroke="#475569" stroke-width="1.2" />
+    <text x="38" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">••••••••••••</text>
+    
+    <!-- Submit Button -->
+    <rect x="25" y="232" width="270" height="32" rx="8" fill="url(#btn-grad-auth)" />
+    <text x="160" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Sign In to Dashboard</text>
+  </g>
+
+  <!-- Left Quick Badge -->
+  <g transform="translate(24, 75)">
+    <rect width="112" height="60" rx="10" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+    <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#94a3b8">VALIDATION</text>
+    <text x="12" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#38bdf8">Client Regex</text>
+  </g>
+
+  <!-- Right Quick Badge -->
+  <g transform="translate(504, 75)">
+    <rect width="112" height="60" rx="10" fill="#1e293b" fill-opacity="0.8" stroke="#334155" stroke-width="1" />
+    <text x="12" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#94a3b8">SECURITY</text>
+    <text x="12" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#10b981">Auth Tokens</text>
+  </g>
+</svg>

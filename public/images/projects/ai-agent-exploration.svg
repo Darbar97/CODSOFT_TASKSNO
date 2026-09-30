@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad-ai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Node Glow Gradient -->
+    <linearGradient id="glow-ai" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="grad-stage4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect width="640" height="360" rx="16" fill="url(#bg-grad-ai)" />
+  <rect x="0.5" y="0.5" width="639" height="359" rx="15.5" stroke="#312e81" stroke-opacity="0.8" />
+
+  <!-- Window Header Bar -->
+  <rect x="0" y="0" width="640" height="44" rx="16" fill="#0f172a" fill-opacity="0.95" />
+  <rect x="0" y="32" width="640" height="12" fill="#0f172a" fill-opacity="0.95" />
+  <line x1="0" y1="44" x2="640" y2="44" stroke="#1e293b" />
+
+  <!-- Window Dots -->
+  <circle cx="28" cy="22" r="5" fill="#ef4444" />
+  <circle cx="44" cy="22" r="5" fill="#f59e0b" />
+  <circle cx="60" cy="22" r="5" fill="#10b981" />
+
+  <!-- Window Title -->
+  <text x="320" y="27" font-family="monospace, monospace" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">ai_agent_runtime.py — IBM SkillsBuild &amp; TCS iON Framework</text>
+
+  <!-- Node Diagram Architecture (4 Aligned Columns) -->
+  <!-- Column 1: Prompt Ingest -->
+  <g transform="translate(24, 68)">
+    <rect width="124" height="135" rx="10" fill="#1e293b" stroke="#4338ca" stroke-width="1.2" />
+    <rect width="124" height="28" rx="10" fill="#312e81" fill-opacity="0.7" />
+    <text x="62" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#c7d2fe" text-anchor="middle">1. PROMPT INGEST</text>
+    <text x="12" y="50" font-family="monospace, monospace" font-size="9.5" fill="#93c5fd">&gt; Task Input</text>
+    <text x="12" y="72" font-family="monospace, monospace" font-size="9.5" fill="#94a3b8">&gt; System Role</text>
+    <text x="12" y="94" font-family="monospace, monospace" font-size="9.5" fill="#94a3b8">&gt; Context Schema</text>
+    <text x="12" y="116" font-family="monospace, monospace" font-size="9.5" fill="#a5b4fc">&gt; Few-Shot Seed</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="148" y1="135" x2="176" y2="135" stroke="#818cf8" stroke-width="2" stroke-dasharray="3 3" />
+  <polygon points="176,131 184,135 176,139" fill="#818cf8" />
+
+  <!-- Column 2: Reasoning Engine -->
+  <g transform="translate(184, 60)">
+    <rect width="136" height="151" rx="12" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" />
+    <rect width="136" height="30" rx="12" fill="url(#glow-ai)" />
+    <text x="68" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">2. AGENT REASON</text>
+    <text x="14" y="52" font-family="monospace, monospace" font-size="9.5" fill="#e0e7ff">• State Tracking</text>
+    <text x="14" y="74" font-family="monospace, monospace" font-size="9.5" fill="#c7d2fe">• Chain of Thought</text>
+    <text x="14" y="96" font-family="monospace, monospace" font-size="9.5" fill="#a5b4fc">• Branch Evaluation</text>
+    <text x="14" y="118" font-family="monospace, monospace" font-size="9.5" fill="#818cf8">• Reflection Loop</text>
+    <text x="14" y="136" font-family="monospace, monospace" font-size="9.5" fill="#38bdf8">• Tool Dispatch</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="320" y1="135" x2="348" y2="135" stroke="#818cf8" stroke-width="2" stroke-dasharray="3 3" />
+  <polygon points="348,131 356,135 348,139" fill="#818cf8" />
+
+  <!-- Column 3: Tool Execution -->
+  <g transform="translate(356, 68)">
+    <rect width="124" height="135" rx="10" fill="#1e293b" stroke="#4338ca" stroke-width="1.2" />
+    <rect width="124" height="28" rx="10" fill="#312e81" fill-opacity="0.7" />
+    <text x="62" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#c7d2fe" text-anchor="middle">3. TOOL ACTION</text>
+    <text x="12" y="50" font-family="monospace, monospace" font-size="9.5" fill="#34d399">&gt; Call parser()</text>
+    <text x="12" y="72" font-family="monospace, monospace" font-size="9.5" fill="#38bdf8">&gt; API Retrieval</text>
+    <text x="12" y="94" font-family="monospace, monospace" font-size="9.5" fill="#facc15">&gt; Sandboxed Exec</text>
+    <text x="12" y="116" font-family="monospace, monospace" font-size="9.5" fill="#94a3b8">&gt; Verify Output</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="480" y1="135" x2="508" y2="135" stroke="#818cf8" stroke-width="2" stroke-dasharray="3 3" />
+  <polygon points="508,131 516,135 508,139" fill="#818cf8" />
+
+  <!-- Column 4: Verified Output -->
+  <g transform="translate(516, 68)">
+    <rect width="100" height="135" rx="10" fill="#064e3b" stroke="#059669" stroke-width="1.2" />
+    <rect width="100" height="28" rx="10" fill="url(#grad-stage4)" />
+    <text x="50" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">4. RESPONSE</text>
+    <text x="10" y="52" font-family="monospace, monospace" font-size="9" fill="#a7f3d0">✓ JSON Valid</text>
+    <text x="10" y="74" font-family="monospace, monospace" font-size="9" fill="#6ee7b7">✓ Guardrail Pass</text>
+    <text x="10" y="96" font-family="monospace, monospace" font-size="9" fill="#34d399">✓ Grounded Fact</text>
+    <text x="10" y="118" font-family="monospace, monospace" font-size="9" fill="#ffffff">✓ Return Client</text>
+  </g>
+
+  <!-- Bottom Console Status Tray -->
+  <g transform="translate(24, 230)">
+    <rect width="592" height="105" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+    <rect width="592" height="24" rx="10" fill="#1e293b" />
+    <text x="16" y="16" font-family="monospace, monospace" font-size="10" font-weight="600" fill="#94a3b8">Execution Console Log</text>
+    <text x="576" y="16" font-family="monospace, monospace" font-size="10" fill="#34d399" text-anchor="end">Latency: 142ms • Status: 200 OK</text>
+
+    <!-- Terminal Lines -->
+    <text x="16" y="44" font-family="monospace, monospace" font-size="10" fill="#60a5fa">[agent.init]</text>
+    <text x="100" y="44" font-family="monospace, monospace" font-size="10" fill="#cbd5e1">Ingested user query schema successfully</text>
+
+    <text x="16" y="64" font-family="monospace, monospace" font-size="10" fill="#a78bfa">[agent.reason]</text>
+    <text x="100" y="64" font-family="monospace, monospace" font-size="10" fill="#cbd5e1">Completed multi-step chain-of-thought analysis</text>
+
+    <text x="16" y="84" font-family="monospace, monospace" font-size="10" fill="#34d399">[agent.verify]</text>
+    <text x="100" y="84" font-family="monospace, monospace" font-size="10" fill="#e2e8f0">Output verified against safety guardrails and schema contract</text>
+  </g>
+</svg>
